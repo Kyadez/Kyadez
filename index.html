@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mangrove &amp; Gastropod Research | Masbate</title>
+    <meta name="description" content="A school research project on the relationship between mangrove ecosystems and gastropod biodiversity in Masbate, Philippines.">
+    <meta name="theme-color" content="#174c35">
+
+    <link rel="icon" href="assets/Images/echidlia-logo.png">
+
+    <!-- Fonts: Crimson Pro (headings) + Atkinson Hyperlegible (body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Crimson+Pro:wght@400;500;600;700&display=swap">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <!-- Navigation Bar -->
+    <header>
+        <div class="container">
+            <nav aria-label="Main">
+                <a href="#home" class="logo">
+                    <img src="assets/Images/echidlia-logo.png" alt="" class="logo-image">
+                    <span>PlaceHolder</span>
+                </a>
+
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#data">Data Center</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main">
+
+        <!-- Homepage -->
+        <section id="home" class="hero">
+            <div class="container hero-grid">
+
+                <div class="hero-copy">
+                    <h1>What lives in Masbate&rsquo;s mangroves?</h1>
+                    <p class="lead">
+                        Search a gastropod to see how much it shapes the
+                        mangrove, explained in plain language instead of
+                        raw equations.
+                    </p>
+                    <div class="actions">
+                        <a class="btn btn-primary" href="#data">Search a gastropod</a>
+                        <a class="btn btn-secondary" href="#about">Read about the study</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section id="about" class="section">
+            <div class="container about-grid">
+                <div>
+                    <h2>About our research</h2>
+                    <p>
+                        Mangrove forests shelter many small animals, including
+                        snails. We want to find out how the condition of a
+                        mangrove area relates to the variety of gastropods living
+                        in it.
+                    </p>
+                    <p>
+                        Our data center lets anyone look up a gastropod and see
+                        whether its ecological activity has a low or high impact
+                        on the mangrove.
+                    </p>
+                </div>
+
+                <dl class="facts">
+                    <div>
+                        <dt>Location</dt>
+                        <dd>K</dd>
+                    </div>
+                    <div>
+                        <dt>Habitat</dt>
+                        <dd>Y</dd>
+                    </div>
+                    <div>
+                        <dt>Organisms</dt>
+                        <dd>L</dd>
+                    </div>
+                    <div>
+                        <dt>Research team</dt>
+                        <dd>E</dd>
+                    </div>
+                    <div>
+                        <dt>School</dt>
+                        <dd>somewhere only we know</dd>
+                    </div>
+                </dl>
+            </div>
+        </section>
+
+        <!-- Gastropod Data Center -->
+        <section id="data" class="section">
+            <div class="container">
+                <h2>Gastropod data center</h2>
+                <p>
+                    Search a gastropod by name to see whether its impact on the
+                    mangrove is low or high, with an AI interpreter to explain
+                    what the numbers mean.
+                </p>
+
+                <form class="search" id="search-form" role="search">
+                    <label for="species-search">Gastropod name</label>
+                    <div class="search-row">
+                        <input type="search" id="species-search" list="species-list" autocomplete="off"
+                            placeholder="Type High, Medium or Low">
+                        <button type="submit" class="btn btn-primary">Search</button>
+                    </div>
+                    <datalist id="species-list"></datalist>
+                </form>
+                <p class="notice">Placeholders only lolz.</p>
+
+                <div class="result" id="result" aria-live="polite">
+                    <p class="result-empty">ohayo</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>Talk to me doja</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
